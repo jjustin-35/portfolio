@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.selfIntro {
+  height: 100vh;
+  padding: 0 2rem;
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 500px;
+          flex: 3 1 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section.selfIntro nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section.selfIntro nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+main section.selfIntro nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section.selfIntro nav ul li a {
+  padding: 1rem;
+  font-size: 1.25rem;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+main section.selfIntro nav ul li a.active {
+  color: #F19C6D;
+}
+
+main section.selfIntro section {
+  padding: 1rem 2rem;
+}
+
+main section.selfIntro section h1 {
+  color: #F19C6D;
+  font-size: 3rem;
+  padding: 2rem 0;
+}
+
+main section.selfIntro footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+main section.selfIntro footer ul li {
+  padding: 1rem;
+}
+
+main section.selfIntro footer ul li a img {
+  width: 5vw;
+}
+
+main section.backDesign {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 105vh;
+  margin-top: -5vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../ICONS/OrangeBackground.svg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+main section.backDesign img.selfie {
+  margin-left: 10vw;
+  width: 20vw;
+  border-radius: 50%;
+}
+
+main section.backDesign div.text {
+  width: 70%;
+  padding: 1rem;
+  background-color: aqua;
+  position: absolute;
+  bottom: 20vh;
+  right: 10vw;
+  z-index: 100;
+}
+
+main section.backDesign div.backBlock {
+  width: 60%;
+  height: 3rem;
+  background: #1E9BA3;
+  position: absolute;
+  bottom: 15vh;
+  right: 7vw;
+}
+
+@media screen and (max-width: 1000px) {
+  main section.selfIntro nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+  }
+}
+/*# sourceMappingURL=style.css.map */
