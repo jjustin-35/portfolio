@@ -5,9 +5,6 @@
 }
 $basicColor: #F19C6D;
 
-html, body{
-    height: 100%;
-}
 h1, h2, h3, h4, h5{
     font-weight: normal;
 }
@@ -37,10 +34,11 @@ main{
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
+    height: 100vh;
     section.selfIntro{
-        height: 100vh;
+        height: 100%;
         padding: 0 2rem;
-        flex: 3 1 500px;
+        flex: 3 1 300px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -91,10 +89,10 @@ main{
         }
     }
     section.backDesign{
-        flex: 1 1 500px;
+        flex: 1 1 300px;
         display: flex;
-        height: 105vh;
-        margin-top: -5vh;
+        // height: 105vh;
+        // margin-top: -5vh;
         flex-direction: column;
         justify-content: center;
         // background
@@ -110,12 +108,12 @@ main{
             border-radius: 50%;
         }
         div.text{
-            width: 70%;
+            width: 80%;
             padding: 1rem;
             background-color: aqua;
             position: absolute;
-            bottom: 20vh;
-            right: 10vw;
+            bottom: 15vh;
+            right: 7vw;
             z-index: 100;
         }
         div.backBlock{
@@ -123,14 +121,21 @@ main{
             height: 3rem;
             background: #1E9BA3;
             position: absolute;
-            bottom: 15vh;
-            right: 7vw;
+            bottom: 10vh;
+            right: 4vw;
         }
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
     main{
+        section.backDesign{
+            background-size: auto 100%;
+            align-items: center;
+            img.selfie{
+                margin: 0;
+            }
+        }
         section.selfIntro{
             nav{
                 position: fixed;
