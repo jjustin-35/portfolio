@@ -135,6 +135,8 @@ footer{
 @media screen and (max-width: 600px) {
     nav{
         padding: 0;
+        position: fixed;
+        top: 0;
         div.mobileNav{
             display: block;
         }

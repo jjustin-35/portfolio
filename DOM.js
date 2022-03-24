@@ -10,33 +10,42 @@ $(document).ready(function () {
     function resizeScreen() {
         if ($window.width() < 600) {
             $navUl.css('display', 'none')
-
-            // 向下滑動時navbar隱藏，向上時顯示
-            // 函式是一種物件，可以儲存其他物件
-            // $window.scroll(
-            //     {
-            //     previousTop: 0
-            // },
-            //     function () {
-            //         let currentTop = $window.scrollTop()
-            //         // 上升
-            //         // this: scroll
-            //         if ($window.scrollTop() == 0) {
-            //             $mobileNav.slideDown()
-            //         } else if (currentTop < this.previousTop) {
-            //             $mobileNav.slideUp()
-            //         } //下降
-            //         else {
-            //             $mobileNav.slideDown()
-            //         }
-            //         this.previousTop = currentTop
-            //     }
-            // )
-
+            scrollChange(true)
         } else {
             $navUl.css('display', 'flex')
         }
     }
 
+    function scrollChange(boolean) {
+        if (boolean) {
+            _.debounce(
+                $window.scroll(
+                // 傳入previewTop的參數
+                {
+                previousTop: 0
+                },
+                function () {
+                    let currentTop = $window.scrollTop()
+                    if (currentTop == 0) {
+                        $mobileNav.slideDown()
+                    } // 上升 this: scroll
+                    else if (currentTop < this.previousTop) {
+                        $mobileNav.slideDown()
+                    } //下降
+                    else if (currentTop > this.previousTop) {
+                        $mobileNav.slideUp()
+                        $navUl.slideUp()
+                    }
+                    this.previousTop = currentTop
+                    })
+                ,
+                250)
+        }
+    }
+    // 執行小畫面時的nav變化
+    if ($window.width() < 600) {
+        scrollChange(true)
+    }
+    // 執行畫面變化
     $window.resize(resizeScreen)
 })

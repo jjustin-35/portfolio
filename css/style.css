@@ -189,6 +189,8 @@ footer ul li a img {
 @media screen and (max-width: 600px) {
   nav {
     padding: 0;
+    position: fixed;
+    top: 0;
   }
   nav div.mobileNav {
     display: block;
