@@ -64,6 +64,7 @@ nav{
 main{
     display: flex;
     flex-wrap: wrap-reverse;
+    height: calc(100vh - 11vw);
     section.selfIntro{
         padding: 0 2rem;
         flex: 3 1 500px;
@@ -118,6 +119,8 @@ main{
 }
 footer{
     padding: 0 1.5rem;
+    // display: flex;
+    // flex-direction: column;
     ul{
         display: flex;
         margin-bottom: 0;

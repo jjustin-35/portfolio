@@ -85,6 +85,7 @@ main {
   display: flex;
   -ms-flex-wrap: wrap-reverse;
       flex-wrap: wrap-reverse;
+  height: calc(100vh - 11vw);
 }
 
 main section.selfIntro {
