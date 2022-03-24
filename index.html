@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- fontawsome -->
+    <script src="https://kit.fontawesome.com/571e65be0d.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +21,8 @@
     <img src="./ICONS/OrangeBackground.svg" class="orangeBack" alt="">
     <!-- nav -->
     <nav>
-        <ul>
+        <div class="mobileNav" id="mobileNav"><i class="fa-solid fa-bars"></i></div>
+        <ul id="navUl">
             <li><a href="#" class="active">首頁</a></li>
             <li><a href="./resume.html">我的履歷</a></li>
             <li><a href="./contact.html">聯絡方式</a></li>
@@ -77,4 +82,5 @@
         </ul>
     </footer>
 </body>
+<script src="./DOM.js"></script>
 </html>
