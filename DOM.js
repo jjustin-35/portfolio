@@ -8,16 +8,17 @@ $(document).ready(function () {
     })
     // 畫面縮放影響navbar
     function resizeScreen() {
-        if ($window.width() < 600) {
+        if ($window.width() < 700) {
             $navUl.css('display', 'none')
             scrollChange(true)
         } else {
             $navUl.css('display', 'flex')
+            $window.off('scroll')
         }
     }
 
     function scrollChange(boolean) {
-        if (boolean) {
+        if (boolean == true) {
             _.debounce(
                 $window.scroll(
                 // 傳入previewTop的參數
@@ -41,10 +42,6 @@ $(document).ready(function () {
                 ,
                 250)
         }
-    }
-    // 執行小畫面時的nav變化
-    if ($window.width() < 600) {
-        scrollChange(true)
     }
     // 執行畫面變化
     $window.resize(resizeScreen)

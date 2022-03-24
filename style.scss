@@ -22,13 +22,13 @@ img.orangeBack{
 // navbar
 nav{
     width: 100%;
+    // display: flex;
     padding: 0 1.5rem;
     position: sticky;
     top:0;
     z-index: 100;
     div.mobileNav{
         display: none;
-        width: 100%;
         padding: 0.5rem;
         font-size: 1.5rem;
         text-align: center;
@@ -132,7 +132,7 @@ footer{
         }
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     nav{
         padding: 0;
         position: fixed;
