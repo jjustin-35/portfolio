@@ -6,6 +6,9 @@ $(document).ready(function () {
     $mobileNav.on('click', function () {
         $navUl.slideToggle()
     })
+    if ($window.width() < 700) {
+        scrollChange(true)
+    }
     // 畫面縮放影響navbar
     function resizeScreen() {
         if ($window.width() < 700) {
