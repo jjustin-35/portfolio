@@ -5,4 +5,14 @@ div.animation{
     position: fixed;
     top: 0;
     z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeOut 1s ease-out calc(0.3s * 18) forwards;
+}
+
+@keyframes fadeOut {
+    to{
+        opacity: 0;
+    }
 }

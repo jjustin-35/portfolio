@@ -5,17 +5,28 @@ div.animation {
   position: fixed;
   top: 0;
   z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: fadeOut 1s ease-out calc(0.3s * 18) forwards;
+          animation: fadeOut 1s ease-out calc(0.3s * 18) forwards;
 }
 
-@-webkit-keyframes animation {
+@-webkit-keyframes fadeOut {
   to {
-    stroke-dashoffset: 0px;
+    opacity: 0;
   }
 }
 
-@keyframes animation {
+@keyframes fadeOut {
   to {
-    stroke-dashoffset: 0px;
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=animation.css.map */
