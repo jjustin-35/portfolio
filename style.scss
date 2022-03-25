@@ -63,11 +63,26 @@ nav{
 }
 main{
     display: flex;
-    flex-wrap: wrap-reverse;
-    height: calc(100vh - 11vw);
+    height: calc(100vh - 12vw);
+    section.mobile{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        img.selfie{
+            border-radius: 50%;
+            margin: 3rem 4rem 1rem 4rem;
+            width: 20vw;
+        }
+        h1{
+            color: $basicColor;
+            font-size: 3rem;
+            padding: 1rem 4rem;
+        }
+    }
     section.selfIntro{
         padding: 0 2rem;
-        flex: 3 1 500px;
+        flex: 2 1 500px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -98,23 +113,23 @@ main{
             right: 15vw;
             transform: translateY(-50%);
         }
-        div.text{
-            width: 30%;
-            padding: 1rem;
-            background-color: aqua;
-            position: absolute;
-            top: 80vh;
-            right: 10vw;
-            z-index: 50;
-        }
-        div.backBlock{
-            width: 20%;
-            height: 3rem;
-            background: #1E9BA3;
-            position: absolute;
-            top: 85vh;
-            right: 7vw;
-        }
+        // div.text{
+        //     width: 80%;
+        //     padding: 1rem;
+        //     background-color: aqua;
+        //     position: relative;
+        //     top: 30vh;
+        //     right: 3vw;
+        //     z-index: 50;
+        // }
+        // div.backBlock{
+        //     width: 70%;
+        //     height: 3rem;
+        //     background: #1E9BA3;
+        //     position: relative;
+        //     top: 25vh;
+        //     left: 3vw;
+        // }
     }
 }
 footer{
@@ -135,7 +150,34 @@ footer{
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    img.orangeBack{
+        width: 50vw;
+        opacity: 60%;
+    }
+    main{
+        flex-direction: column;
+        height: calc(100vh - 15vw);
+        section.mobile{
+            display: flex;
+        }
+        section.selfIntro{
+            h1{
+                display: none;
+            }
+        }
+        section.backDesign{
+            display: none;
+        }
+    }
+
+}
+
 @media screen and (max-width: 700px) {
+    img.orangeBack{
+        opacity: 30%;
+    }
     nav{
         padding: 0;
         position: fixed;
@@ -154,25 +196,35 @@ footer{
     }
     main{
         height: auto;
-        section.backDesign{
-            width: 100%;
+        section.mobile{
             height: 100vh;
+            align-items: center;
             img.selfie{
                 width: 40vw;
-                right: 30vw;
-            }
-            div.text{
-                width: 50vw;
-                right: 30vw;
-                top: 70vh;
-            }
-            div.backBlock{
-                width: 40vw;
-                right: 20vw;
-                top: 80vh;
+            };
+            h1{
+                text-align: center;
             }
         }
-    }
+        section.selfIntro{
+            h1{
+                position: absolute;
+                top: 50vh;
+                left:10vw;
+                transform: translateY(-50%);
+            }
+        }
+            // div.text{
+            //     width: 50vw;
+            //     right: 30vw;
+            //     top: 70vh;
+            // }
+            // div.backBlock{
+            //     width: 40vw;
+            //     right: 20vw;
+            //     top: 80vh;
+            // }
+        }
     footer ul li a img{
         width: 8vw;
     }
