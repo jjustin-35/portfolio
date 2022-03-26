@@ -18,7 +18,7 @@ img.orangeBack {
   height: 100vh;
   top: 0;
   right: 0;
-  z-index: -10;
+  z-index: -1;
 }
 
 nav {
@@ -184,7 +184,7 @@ footer ul {
 }
 
 footer ul li {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
 
 footer ul li a img {
@@ -195,6 +195,9 @@ footer ul li a img {
   img.orangeBack {
     width: 50vw;
     opacity: 60%;
+  }
+  nav {
+    background-color: white;
   }
   main {
     -webkit-box-orient: vertical;

@@ -1,0 +1,87 @@
+main {
+  height: auto;
+}
+
+main table {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 200px;
+          flex: 2 1 200px;
+  margin: 1rem 2rem;
+  border-collapse: collapse;
+}
+
+main table tr th, main table tr td {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 0.5rem;
+  padding-right: 1rem;
+}
+
+main table tr th {
+  width: 20%;
+}
+
+main table tr td.technique div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+  position: relative;
+  height: 100%;
+}
+
+main section div {
+  width: 27vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section div img {
+  width: 90%;
+}
+
+main section div.backBox {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #F19C6D;
+  width: 60%;
+  height: 70%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    height: auto;
+  }
+  main section div {
+    width: 100vw;
+  }
+  main section div img {
+    width: 50%;
+  }
+  main section div.backBox {
+    width: 40%;
+    right: 20vw;
+  }
+  footer ul {
+    width: 100vw;
+  }
+}
+/*# sourceMappingURL=resume-style.css.map */

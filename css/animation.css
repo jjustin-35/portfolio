@@ -21,12 +21,14 @@ div.animation {
 @-webkit-keyframes fadeOut {
   to {
     opacity: 0;
+    z-index: -100;
   }
 }
 
 @keyframes fadeOut {
   to {
     opacity: 0;
+    z-index: -100;
   }
 }
 /*# sourceMappingURL=animation.css.map */
