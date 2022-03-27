@@ -1,0 +1,87 @@
+main {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main section.form {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main section.form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section.form form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+main section.form form div label {
+  color: #F19C6D;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+main section.form form div input {
+  background-color: #F19C6D;
+  opacity: 60%;
+  width: 60%;
+  border: none;
+  height: 100%;
+}
+
+main section.form form div textarea {
+  background-color: #F19C6D;
+  opacity: 60%;
+  width: 60%;
+  border: none;
+}
+
+main section.contact {
+  padding: 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 200px;
+          flex: 1 1 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-left: 2px solid black;
+}
+
+main section.contact h3 {
+  padding: 1rem;
+  font-weight: bold;
+}
+/*# sourceMappingURL=contact-style.css.map */

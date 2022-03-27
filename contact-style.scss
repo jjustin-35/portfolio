@@ -1,0 +1,54 @@
+$basicColor: #F19C6D;
+
+@mixin input {
+    background-color: $basicColor;
+    opacity: 60%;
+    width: 60%;
+    border: none
+}
+
+main{
+    justify-content: flex-start;
+    section.form{
+        // flex: 1 1 200px;
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        form{
+            display: flex;
+            padding: 3rem;
+            flex-direction: column;
+            justify-content: center;
+            div{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 2rem;
+                label{
+                    color: $basicColor;
+                    font-weight: bold;
+                    font-size: 1.25rem;
+                }
+                input{
+                    @include input();
+                    height: 100%;
+                }
+                textarea{
+                    @include input();
+                }
+            }
+        }
+    }
+    section.contact{
+        padding: 2rem;
+        flex: 1 1 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-left: 2px solid black;
+        h3{
+            padding: 1rem;
+            font-weight: bold;
+        }
+    }
+}

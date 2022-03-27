@@ -74,11 +74,11 @@ main section div.backBox {
     width: 100vw;
   }
   main section div img {
-    width: 50%;
+    width: 40%;
   }
   main section div.backBox {
-    width: 40%;
-    right: 20vw;
+    width: 30%;
+    right: 25vw;
   }
   footer ul {
     width: 100vw;

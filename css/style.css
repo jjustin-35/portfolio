@@ -204,12 +204,13 @@ footer ul li a img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: calc(100vh - 15vw);
+    height: auto;
   }
   main section.mobile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 100vh;
   }
   main section.selfIntro h1 {
     display: none;
@@ -243,7 +244,6 @@ footer ul li a img {
     height: auto;
   }
   main section.mobile {
-    height: 100vh;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
