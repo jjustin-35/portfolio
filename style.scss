@@ -34,6 +34,7 @@ nav{
         text-align: center;
         background-color: white;
         cursor: pointer;
+        box-shadow: 0 8px 6px -6px rgba(29, 29, 29, 0.5);
     }
     ul{
         width: 70%;
@@ -174,6 +175,7 @@ footer{
             display: none;
             width: 100%;
             background-color: white;
+            box-shadow: 0 8px 6px -6px rgba(29, 29, 29, 0.5);
             li{
                 width: 100%;
             }

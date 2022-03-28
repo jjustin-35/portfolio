@@ -8,7 +8,22 @@ div.animation{
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: fadeOut 1s ease-out calc(0.3s * 18) forwards;
+    animation: fadeOut 1s ease-out calc(0.3s * 14) forwards;
+    div.logo{
+        svg{
+            animation: fill 1s ease-in calc(0.3s * 9) forwards;
+        }
+    }
+}
+
+@keyframes fill {
+    from{
+        fill: transparent;
+        // 全透明
+    }
+    to{
+        fill: white;
+    }
 }
 
 @keyframes fadeOut {

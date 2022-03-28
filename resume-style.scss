@@ -1,12 +1,13 @@
 $basicColor: #F19C6D;
 main{
     height: auto;
+    align-items: flex-end;
     table{
         flex: 2 1 200px;
         margin:1rem 2rem;
         border-collapse: collapse;
         tr{
-            // display: flex;
+            transition: all 0.2s ease;
             th, td{
                 border-top: 2px solid black;
                 border-bottom: 2px solid black;
@@ -24,10 +25,12 @@ main{
                     
                 }
             }
+            &:hover{
+                background-color:#ffdfcd;
+            }
         }
     }
     section{
-        // flex: 1 1 200px;
         display: flex;
         align-items: center;
         justify-content: center;

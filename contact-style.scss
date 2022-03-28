@@ -4,17 +4,18 @@ $basicColor: #F19C6D;
     background-color: $basicColor;
     opacity: 60%;
     width: 60%;
-    border: none
+    border: none;
 }
 
 main{
     justify-content: flex-start;
+    flex-wrap: wrap;
     section.form{
-        // flex: 1 1 200px;
-        width: 50%;
+        flex: 1 1 350px;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         form{
+            width: 90%;
             display: flex;
             padding: 3rem;
             flex-direction: column;
@@ -23,7 +24,7 @@ main{
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-start;
-                margin-bottom: 2rem;
+                margin-bottom: 1.5rem;
                 label{
                     color: $basicColor;
                     font-weight: bold;
@@ -37,11 +38,21 @@ main{
                     @include input();
                 }
             }
+            input.btn{
+                margin: 0 auto;
+                width: 50%;
+                padding: 1rem;
+                background-color: $basicColor;
+                border: none;
+                font-size: 1.5rem;
+                color: white;
+                cursor: pointer;
+            }
         }
     }
     section.contact{
         padding: 2rem;
-        flex: 1 1 200px;
+        flex: 1 1 350px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -49,6 +60,25 @@ main{
         h3{
             padding: 1rem;
             font-weight: bold;
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    main{
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 700px) {
+    main{ 
+        section.form{
+            width: 100%;
+            height: 100vh;
+            form{
+                width: 90%;
+            }
+        }
+        section.contact{
+            border-left: none;
         }
     }
 }

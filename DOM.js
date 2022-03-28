@@ -21,6 +21,7 @@ $(document).ready(function () {
     }
 
     function scrollChange(boolean) {
+        let $nav = $('nav')
         if (boolean == true) {
             _.debounce(
                 $window.scroll(
@@ -32,13 +33,16 @@ $(document).ready(function () {
                     let currentTop = $window.scrollTop()
                     if (currentTop == 0) {
                         $mobileNav.slideDown()
+                        $nav.css('position', 'sticky')
                     } // 上升 this: scroll
                     else if (currentTop < this.previousTop) {
                         $mobileNav.slideDown()
+                        $nav.css('position', 'fixed')
                     } //下降
                     else if (currentTop > this.previousTop) {
                         $mobileNav.slideUp()
                         $navUl.slideUp()
+                        $nav.css('position', 'fixed')
                     }
                     this.previousTop = currentTop
                     })
