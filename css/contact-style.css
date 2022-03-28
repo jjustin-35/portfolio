@@ -73,9 +73,17 @@ main section.form form input.btn {
   padding: 1rem;
   background-color: #F19C6D;
   border: none;
+  border-radius: 10px;
   font-size: 1.5rem;
   color: white;
   cursor: pointer;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+main section.form form input.btn:hover {
+  background-color: white;
+  color: #F19C6D;
 }
 
 main section.contact {

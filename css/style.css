@@ -58,9 +58,14 @@ nav ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 nav ul li a {
@@ -71,6 +76,7 @@ nav ul li a {
   text-decoration: none;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
+  cursor: pointer;
 }
 
 nav ul li a.active {
@@ -79,6 +85,36 @@ nav ul li a.active {
 
 nav ul li a:hover {
   color: #F19C6D;
+}
+
+nav ul li ul.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 1rem;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 180px;
+  background-color: white;
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border: 1px solid gray;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+nav ul li ul.dropdown li a {
+  font-size: 1rem;
+}
+
+nav ul li:hover > ul.dropdown {
+  visibility: visible;
+  opacity: 1;
 }
 
 main {
@@ -243,6 +279,9 @@ footer ul li a img {
   }
   nav ul li {
     width: 100%;
+  }
+  nav ul li ul.dropdown {
+    left: 0;
   }
   main {
     height: auto;
