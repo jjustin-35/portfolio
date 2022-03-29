@@ -193,7 +193,7 @@ footer{
     }
     nav{
         padding: 0;
-        position: fixed;
+        position: sticky;
         top: 0;
         div.mobileNav{
             display: block;

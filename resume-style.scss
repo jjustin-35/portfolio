@@ -1,7 +1,7 @@
 $basicColor: #F19C6D;
 main{
     height: auto;
-    align-items: flex-end;
+    align-items: center;
     table{
         flex: 2 1 200px;
         margin:1rem 2rem;
@@ -12,7 +12,7 @@ main{
                 border-top: 2px solid black;
                 border-bottom: 2px solid black;
                 padding: 0.5rem;
-                padding-right: 1rem;
+                padding-right: 1.5rem;
             }
             th{
                 width: 20%;
@@ -61,8 +61,9 @@ main{
     main{
         height: auto;
         section{
+            width: 100%;
             div{
-                width: 100vw;
+                width: 100%;
                 img{
                     width: 40%
                 }
@@ -80,4 +81,13 @@ main{
     }
 }
 @media screen and (max-width: 700px) {
+    main{
+        table{
+            flex: auto;
+            margin: 1rem;
+        }
+        section{
+            padding: 1rem;
+        }
+    }
 }

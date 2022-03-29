@@ -1,8 +1,8 @@
 main {
   height: auto;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main table {
@@ -22,7 +22,7 @@ main table tr th, main table tr td {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   padding: 0.5rem;
-  padding-right: 1rem;
+  padding-right: 1.5rem;
 }
 
 main table tr th {
@@ -82,8 +82,11 @@ main section div.backBox {
   main {
     height: auto;
   }
+  main section {
+    width: 100%;
+  }
   main section div {
-    width: 100vw;
+    width: 100%;
   }
   main section div img {
     width: 40%;
@@ -94,6 +97,18 @@ main section div.backBox {
   }
   footer ul {
     width: 100vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main table {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    margin: 1rem;
+  }
+  main section {
+    padding: 1rem;
   }
 }
 /*# sourceMappingURL=resume-style.css.map */

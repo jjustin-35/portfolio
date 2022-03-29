@@ -68,21 +68,23 @@ main section.form form div textarea {
   vertical-align: top;
 }
 
-main section.form form input.btn {
-  margin: 0 auto;
+main section.form form button.btn {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   width: 50%;
   padding: 1rem;
   background-color: #F19C6D;
-  border: none;
+  border: #F19C6D solid 2px;
   border-radius: 10px;
   font-size: 1.5rem;
   color: white;
   cursor: pointer;
-  -webkit-transition: all 0.25s ease-in;
-  transition: all 0.25s ease-in;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
-main section.form form input.btn:hover {
+main section.form form button.btn:hover {
   background-color: white;
   color: #F19C6D;
 }
@@ -126,6 +128,23 @@ main section.contact h3 {
   }
   main section.form form {
     width: 90%;
+  }
+  main section.form form div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  main section.form form div input {
+    width: 100%;
+    height: 1.5rem;
+  }
+  main section.form form div textarea {
+    width: 100%;
   }
   main section.contact {
     border-left: none;
