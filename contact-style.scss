@@ -36,6 +36,7 @@ main{
                 }
                 textarea{
                     @include input();
+                    vertical-align: top;
                 }
             }
             input.btn{

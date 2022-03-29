@@ -121,7 +121,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: calc(100vh - 12vw);
+  height: 80vh;
 }
 
 main section.mobile {
